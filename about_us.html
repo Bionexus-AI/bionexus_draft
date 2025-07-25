@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | BioNexus.AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans text-gray-900 scroll-smooth">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full bg-white shadow z-50 navbar-visible">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-blue-900">BioNexus.AI</div>
+      <ul class="flex space-x-6 text-gray-700 font-medium">
+        <li><a href="products.html" class="hover:text-blue-700">Products</a></li>
+        <li><a href="about_us.html" class="hover:text-blue-700">About Us</a></li>
+        <li><a href="license.html" class="hover:text-blue-700">Licensing</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="pt-32 pb-12 px-6 text-center">
+    <h1 class="text-4xl font-bold text-blue-800">About Us</h1>
+  </section>
+
+  <!-- Mission Statement -->
+  <section class="max-w-4xl mx-auto px-6 mb-16 text-center">
+    <h2 class="text-2xl font-semibold mb-4 text-blue-700">Mission Statement</h2>
+    <p class="text-lg text-gray-700 leading-relaxed">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+      Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+    </p>
+  </section>
+
+  <!-- Team Section -->
+  <section class="max-w-6xl mx-auto px-6 mb-32 text-center">
+    <h2 class="text-2xl font-semibold mb-10 text-blue-700">Our Team</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="flex flex-col items-center">
+        <div class="w-32 h-32 rounded-full bg-gray-300 flex items-center justify-center text-gray-500 text-sm">
+          Headshot
+        </div>
+        <p class="mt-4 font-medium text-gray-800">Employee_1</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-32 h-32 rounded-full bg-gray-300 flex items-center justify-center text-gray-500 text-sm">
+          Headshot
+        </div>
+        <p class="mt-4 font-medium text-gray-800">Employee_2</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-32 h-32 rounded-full bg-gray-300 flex items-center justify-center text-gray-500 text-sm">
+          Headshot
+        </div>
+        <p class="mt-4 font-medium text-gray-800">Employee_3</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="w-32 h-32 rounded-full bg-gray-300 flex items-center justify-center text-gray-500 text-sm">
+          Headshot
+        </div>
+        <p class="mt-4 font-medium text-gray-800">Employee_4</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn"
+    class="fixed bottom-6 right-6 w-16 h-16 bg-blue-700 text-white text-2xl font-bold rounded-full shadow-lg hover:bg-blue-800 transition hidden flex items-center justify-center">
+    ↑
+  </button>
+
+  <!-- Footer (loaded dynamically) -->
+  <div id="footer-container"></div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
