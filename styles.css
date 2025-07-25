@@ -1,0 +1,15 @@
+/* Custom Styles */
+
+.bg-circle {
+  background: radial-gradient(circle at center, rgba(166, 226, 219, 0.4), transparent 60%);
+}
+
+.navbar-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-visible {
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
