@@ -5,34 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BioNexus.AI</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .bg-circle {
-      background: radial-gradient(circle at center, rgba(166, 226, 219, 0.4), transparent 60%);
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="font-sans text-gray-900">
+<body class="font-sans text-gray-900 scroll-smooth relative">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full bg-white shadow z-50 navbar-visible">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-blue-900">BioNexus.AI</div>
+      <ul class="flex space-x-6 text-gray-700 font-medium">
+        <li><a href="products.html" class="hover:text-blue-700">Products</a></li>
+        <li><a href="about_us.html" class="hover:text-blue-700">About Us</a></li>
+        <li><a href="license.html" class="hover:text-blue-700">Licensing</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Hero Section -->
-  <section class="relative bg-gradient-to-br from-green-100 to-blue-100 py-20 px-6 overflow-hidden">
-    <div class="max-w-5xl mx-auto text-center z-10 relative">
+  <section class="relative bg-gradient-to-br from-green-100 to-blue-100 py-32 px-6 overflow-hidden">
+    <div class="max-w-5xl mx-auto text-center z-10 relative pt-10">
       <h1 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">We Are The Future of Biologics</h1>
       <p class="text-lg text-gray-700 max-w-2xl mx-auto">
         Leveraging the intersectionality of Physics and AI, we represent the new frontier of integrated drug discovery and therapeutics development.
       </p>
     </div>
-
-    <!-- Right-Aligned Circle Background -->
-    <div class="absolute top-10 right-0 w-80 h-80 rounded-full bg-circle z-0">
-      <!-- You can later add an image inside this circle with absolute positioning -->
-    </div>
+    <div class="absolute top-20 right-0 w-80 h-80 rounded-full bg-circle z-0"></div>
   </section>
 
-  <!-- Dual Column Section: We Offer / Why Choose Us -->
+  <!-- Dual Column Offer/Why Section -->
   <section class="bg-white py-20 px-6">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-
-      <!-- Left Column: We Offer -->
       <div>
         <h2 class="text-3xl font-bold mb-6">We Offer</h2>
         <ul class="space-y-4 text-lg text-gray-700 pl-4 list-disc">
@@ -42,21 +44,15 @@
           <li>Domain knowledge in De Novo drug design, Bioinformatics, Deep Learning, and Physics</li>
         </ul>
       </div>
-
-      <!-- Right Column: Graphic Placeholder -->
       <div class="flex items-center justify-center bg-gray-100 h-64 text-gray-500 border border-dashed rounded">
         Graphic Here
       </div>
     </div>
 
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center mt-20">
-
-      <!-- Left Column: Graphic Placeholder -->
       <div class="flex items-center justify-center bg-gray-100 h-64 text-gray-500 border border-dashed rounded">
         Graphic Here
       </div>
-
-      <!-- Right Column: Why Choose Us -->
       <div>
         <h2 class="text-3xl font-bold mb-6">Why Choose Us</h2>
         <ul class="space-y-4 text-lg text-gray-700 pl-4 list-disc">
@@ -96,10 +92,17 @@
       <h4 class="text-2xl font-semibold mb-4">Reach out to us!</h4>
       <p class="mb-2"><strong>Phone:</strong> (928) 853-2473</p>
       <p class="mb-2"><strong>Email:</strong> bionexus.ai@gmail.com</p>
-      <p class="mb-2"><strong>LinkedIn:</strong> [Placeholder]</p>
+      <p class="mb-2"><strong>LinkedIn:</strong> https://www.linkedin.com/company/bionexus-ai/</p>
       <p class="mb-2"><strong>X:</strong> [Placeholder]</p>
     </div>
   </footer>
 
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn"
+    class="fixed bottom-6 right-6 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-800 transition hidden">
+    ↑
+  </button>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
