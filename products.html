@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Products | BioNexus.AI</title>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -10,52 +10,27 @@
 <body class="font-sans text-gray-900 scroll-smooth">
 
   <!-- Navbar -->
-  <nav id="navbar" class="fixed top-0 left-0 w-full bg-white shadow z-50 navbar-visible">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="text-xl font-bold text-blue-900">BioNexus.AI</div>
-      <ul class="flex space-x-6 text-gray-700 font-medium">
-        <li><a href="products.html" class="hover:text-blue-700">Products</a></li>
-        <li><a href="about_us.html" class="hover:text-blue-700">About Us</a></li>
-        <li><a href="license.html" class="hover:text-blue-700">Licensing</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div id="navbar-container"></div>
 
-  <!-- Page Header -->
-  <section class="pt-32 pb-12 px-6 text-center">
-    <h1 class="text-4xl font-bold text-blue-800">Products</h1>
-  </section>
+  <!-- Hero Header -->
+  <header class="bg-gradient-to-r from-blue-900 to-blue-600 text-white text-center py-24 mt-16">
+    <h1 class="text-5xl font-bold mb-4">Products</h1>
+    <p class="text-xl">Explore our offerings below</p>
+  </header>
 
   <!-- Product Columns -->
-  <section class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6 transition-all duration-500" id="product-grid">
-    <div class="product-card bg-gray-100 p-6 rounded shadow cursor-pointer transition-all" data-product="1">
-      <h2 class="text-xl font-bold mb-2">Placeholder 1</h2>
-      <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <section class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-3 gap-6" id="product-section">
+    <div class="product-box bg-gray-100 p-6 rounded shadow cursor-pointer transition-all duration-300" data-product="1">
+      <h2 class="text-xl font-semibold mb-2">Placeholder 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
     </div>
-    <div class="product-card bg-gray-100 p-6 rounded shadow cursor-pointer transition-all" data-product="2">
-      <h2 class="text-xl font-bold mb-2">Placeholder 2</h2>
-      <p class="text-gray-700">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="product-box bg-gray-100 p-6 rounded shadow cursor-pointer transition-all duration-300" data-product="2">
+      <h2 class="text-xl font-semibold mb-2">Placeholder 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
     </div>
-    <div class="product-card bg-gray-100 p-6 rounded shadow cursor-pointer transition-all" data-product="3">
-      <h2 class="text-xl font-bold mb-2">Placeholder 3</h2>
-      <p class="text-gray-700">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-    </div>
-  </section>
-
-  <!-- Expanded Article View (Initially Hidden) -->
-  <section id="expanded-view" class="max-w-4xl mx-auto mt-16 mb-32 px-6 hidden">
-    <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">Product Title</h2>
-    <div class="bg-gray-200 h-64 mb-6 flex justify-center items-center text-gray-500 text-lg">[Graphic Placeholder]</div>
-    <article class="text-lg text-gray-800 leading-relaxed">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod, nulla sed efficitur dignissim, nisl nisl
-      malesuada metus, sit amet sollicitudin orci ligula ut nunc.</p>
-      <p class="mt-4">Aliquam erat volutpat. Pellentesque a lacus in sem fermentum laoreet. Sed tincidunt, orci nec facilisis
-      pretium, odio nulla consequat elit, et pretium sem nulla vel nisl.</p>
-    </article>
-    <div class="text-center mt-10">
-      <button onclick="resetProducts()" class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition">
-        Back to Products
-      </button>
+    <div class="product-box bg-gray-100 p-6 rounded shadow cursor-pointer transition-all duration-300" data-product="3">
+      <h2 class="text-xl font-semibold mb-2">Placeholder 3</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
     </div>
   </section>
 
@@ -65,9 +40,8 @@
     ↑
   </button>
 
-  <!-- Footer (loaded dynamically) -->
+  <!-- Footer -->
   <div id="footer-container"></div>
-
   <script src="scripts.js"></script>
 </body>
 </html>
