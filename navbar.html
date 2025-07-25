@@ -1,10 +1,21 @@
-<nav id="navbar" class="fixed top-0 left-0 w-full bg-white shadow z-50 navbar-visible">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <a href="index.html" class="text-xl font-bold text-blue-900 hover:text-blue-700 transition">BioNexus.AI</a>
-    <ul class="flex space-x-6 text-gray-700 font-medium">
-      <li><a href="products.html" class="hover:text-blue-700">Products</a></li>
-      <li><a href="about_us.html" class="hover:text-blue-700">About Us</a></li>
-      <li><a href="license.html" class="hover:text-blue-700">Licensing</a></li>
-    </ul>
+<nav id="navbar" class="bg-white shadow-md fixed w-full top-0 z-50 transition-all duration-300 navbar-visible">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <a href="index.html" class="text-xl font-bold text-teal-600">BioNexus.AI</a>
+      <div class="hidden md:flex space-x-8 items-center">
+        <div class="relative group">
+          <button class="text-gray-700 hover:text-teal-600 focus:outline-none">
+            Products
+          </button>
+          <div class="absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-200 z-50">
+            <a href="product1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-100">Product 1</a>
+            <a href="product2.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-100">Product 2</a>
+            <a href="product3.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-100">Product 3</a>
+          </div>
+        </div>
+        <a href="about_us.html" class="text-gray-700 hover:text-teal-600">About Us</a>
+        <a href="license.html" class="text-gray-700 hover:text-teal-600">Licensing</a>
+      </div>
+    </div>
   </div>
 </nav>
