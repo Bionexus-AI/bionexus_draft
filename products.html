@@ -1,47 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Products | BioNexus.AI</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body class="font-sans text-gray-900 scroll-smooth">
+<section class="py-20 px-6">
+  <h2 class="text-4xl font-bold text-center mb-12">Products</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-  <!-- Navbar -->
-  <div id="navbar-container"></div>
-
-  <!-- Hero Header -->
-  <header class="bg-gradient-to-r from-blue-900 to-blue-600 text-white text-center py-24 mt-16">
-    <h1 class="text-5xl font-bold mb-4">Products</h1>
-    <p class="text-xl">Explore our offerings below</p>
-  </header>
-
-  <!-- Product Columns -->
-  <section class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-3 gap-6" id="product-section">
-    <div class="product-box bg-gray-100 p-6 rounded shadow cursor-pointer transition-all duration-300" data-product="1">
-      <h2 class="text-xl font-semibold mb-2">Placeholder 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
+    <!-- Product Card 1 -->
+    <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center">
+      <div class="w-24 h-24 bg-gray-300 rounded-full mb-4">Image</div>
+      <h3 class="text-xl font-semibold mb-2">Product Name 1</h3>
+      <p class="mb-4 text-gray-600">Short description of Product 1 lorem ipsum dolor sit amet.</p>
+      <a href="product1.html" class="mt-auto text-blue-600 hover:underline font-semibold">Learn More →</a>
     </div>
-    <div class="product-box bg-gray-100 p-6 rounded shadow cursor-pointer transition-all duration-300" data-product="2">
-      <h2 class="text-xl font-semibold mb-2">Placeholder 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
-    </div>
-    <div class="product-box bg-gray-100 p-6 rounded shadow cursor-pointer transition-all duration-300" data-product="3">
-      <h2 class="text-xl font-semibold mb-2">Placeholder 3</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
-    </div>
-  </section>
 
-  <!-- Scroll to Top Button -->
-  <button id="scrollTopBtn"
-    class="fixed bottom-6 right-6 w-16 h-16 bg-blue-700 text-white text-2xl font-bold rounded-full shadow-lg hover:bg-blue-800 transition hidden flex items-center justify-center">
-    ↑
-  </button>
+    <!-- Product Card 2 -->
+    <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center">
+      <div class="w-24 h-24 bg-gray-300 rounded-full mb-4">Image</div>
+      <h3 class="text-xl font-semibold mb-2">Product Name 2</h3>
+      <p class="mb-4 text-gray-600">Short description of Product 2 lorem ipsum dolor sit amet.</p>
+      <a href="product2.html" class="mt-auto text-blue-600 hover:underline font-semibold">Learn More →</a>
+    </div>
 
-  <!-- Footer -->
-  <div id="footer-container"></div>
-  <script src="scripts.js"></script>
-</body>
-</html>
+    <!-- Product Card 3 -->
+    <div class="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center">
+      <div class="w-24 h-24 bg-gray-300 rounded-full mb-4">Image</div>
+      <h3 class="text-xl font-semibold mb-2">Product Name 3</h3>
+      <p class="mb-4 text-gray-600">Short description of Product 3 lorem ipsum dolor sit amet.</p>
+      <a href="product3.html" class="mt-auto text-blue-600 hover:underline font-semibold">Learn More →</a>
+    </div>
+
+  </div>
+</section>
