@@ -1,21 +1,27 @@
-<nav id="navbar" class="bg-white shadow-md fixed w-full top-0 z-50 transition-all duration-300 navbar-visible">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-16">
-      <a href="index.html" class="text-xl font-bold text-teal-600">BioNexus.AI</a>
-      <div class="hidden md:flex space-x-8 items-center">
-        <div class="relative group">
-          <button class="text-gray-700 hover:text-teal-600 focus:outline-none">
-            Products
-          </button>
-          <div class="absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-200 z-50">
-            <a href="product1.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-100">Product 1</a>
-            <a href="product2.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-100">Product 2</a>
-            <a href="product3.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-100">Product 3</a>
-          </div>
+<nav class="bg-white shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-bold text-blue-600">BioNexus.AI</a>
+
+    <div class="flex space-x-8">
+      <a href="about_us.html" class="text-gray-800 hover:text-blue-600 text-lg px-2 py-1">About</a>
+      
+      <!-- Products dropdown -->
+      <div class="relative group">
+        <!-- Parent Link (Products) -->
+        <a href="products.html" class="text-gray-800 hover:text-blue-600 text-lg px-2 py-1">Products</a>
+
+        <!-- Dropdown -->
+        <div class="absolute left-0 top-full mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-200 z-50"
+             onmouseover="this.style.opacity='1'; this.style.visibility='visible';"
+             onmouseout="this.style.opacity='0'; this.style.visibility='hidden';">
+          <a href="product1.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">Product 1</a>
+          <a href="product2.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">Product 2</a>
+          <a href="product3.html" class="block px-4 py-3 text-gray-700 hover:bg-gray-100">Product 3</a>
         </div>
-        <a href="about_us.html" class="text-gray-700 hover:text-teal-600">About Us</a>
-        <a href="license.html" class="text-gray-700 hover:text-teal-600">Licensing</a>
       </div>
+
+      <a href="license.html" class="text-gray-800 hover:text-blue-600 text-lg px-2 py-1">License</a>
+      <a href="contact.html" class="text-gray-800 hover:text-blue-600 text-lg px-2 py-1">Contact</a>
     </div>
   </div>
 </nav>
